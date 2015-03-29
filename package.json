@@ -1,0 +1,23 @@
+{
+  "author": "Mark Allen <mark@sailmeter.com>",
+  "name": "resinio-test",
+  "description": "Resio.io Test",
+  "version": "0.1.0",
+  "homepage": "http://www.sailmeter.com/",
+  "main": "app",
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "scripts": {
+    "preinstall": "bash deps.sh",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "serialport": "1.4.x",
+    "config": "0.4.x",
+    "nmea-0183": "Sailmeter/node-nmea",
+    "socket.io": "1.0.x"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
