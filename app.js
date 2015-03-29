@@ -2,6 +2,7 @@ var serialPort = require("serialport");
 
 function getSerialPorts() {
   serialPort.list(function (err, ports) {
+    console.log("Listing ports");
     if (err) {
       console.log("ERR: " + err);
       ports = [];
